@@ -114,6 +114,7 @@ body {
 	padding: 0px;
 	height: 750px;
 	background-image: url("textures-1198841.jpg");
+	background-size: cover;
 }
 
 .welcome {
@@ -138,4 +139,8 @@ body {
 
 .welcome p {
 	font-size: 1.2rem;
+}
+
+.about {
+	
 }
