@@ -35,7 +35,7 @@ body {
 	font-size: 1.3rem;
 	padding: 0px;
 	margin-left: 25px;
-	margin-top: 15px;
+	margin-top: 7px;
 }
 
 .pagelinks a:link {
@@ -62,24 +62,50 @@ body {
 	padding: 7px;
 }
 
+.am {
+	width: 130px;
+	height: 41px;
+}
+
+.pf {
+	width: 140px;
+	height: 41px;
+}
+
+.con {
+	width: 120px;
+	height: 41px;
+}
+
 @media only screen and (max-width: 700px) {
 	.nav {
 		display: none;
 	}
 }
 
+.nav:hover {
+	background-color: white;
+	color: black;
+}
+
+.nav:visited:hover {
+	color: black;
+}
+
 .menu {
-	visibility: hidden;
+	display: none;
 	border-color: rgb(255, 255, 255);
 	border-width: 2px;
 	border-style: solid;
 	border-radius: 25px;
 	padding: 7px;
+	height: 41px;
+	width: 79px;
 }
 
 @media only screen and (max-width: 700px) {
 	.menu {
-		visibility: visible;
+		display: block;
 	}
 }
 
@@ -97,14 +123,18 @@ body {
 	padding-right: 8px;
 }
 
-.cv a:link {
+.cv {
 	text-decoration: none;
 	color: white;
 }
 
-.cv a:visited {
-	text-decoration: none;
-	color: white;
+.cv:hover {
+	background-color: white;
+}
+
+.cv:hover {
+	background-color: white;
+	color: black;
 }
 
 .background {
