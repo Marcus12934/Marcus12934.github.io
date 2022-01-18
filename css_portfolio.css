@@ -141,7 +141,6 @@ body {
 	display: flex;
 	justify-content: center;
 	margin-top: 55px;
-	padding: 0px;
 	height: 750px;
 	background-image: url("textures-1198841.jpg");
 	background-size: cover;
@@ -172,8 +171,36 @@ body {
 }
 
 .about {
-	background-color: rgb(132, 147, 171);
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(102, 130, 176);
 	width: 100%;
 	height: 500px;
+	padding: 50px;
 }
 
+.aboutcontent {
+	height: 400px;
+	width: 100%;
+}
+
+.abouttxt {
+	width: 45%;
+	min-width: 350px;
+	background-color: white;
+	height: 400px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-color: rgb(000, 000, 000);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	outline-color: rgb(255, 255, 255);
+	outline-width: 2px;
+	outline-style: solid;
+}
+
+.amheading {
+	font-weight: normal;
+	font-size: 2rem;
+}
