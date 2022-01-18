@@ -172,5 +172,8 @@ body {
 }
 
 .about {
-	
+	background-color: rgb(132, 147, 171);
+	width: 100%;
+	height: 500px;
 }
+
