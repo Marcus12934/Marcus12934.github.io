@@ -1,0 +1,176 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 62.5;
+	margin: 0px;
+	font-family: helvetica;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	height: 55px;
+	background-color: rgb(30, 30, 30);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+	.navbar {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+.pagelinks {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 500px;
+	list-style-type: none;
+	font-size: 1.3rem;
+	padding: 0px;
+	margin-left: 25px;
+	margin-top: 7px;
+}
+
+.pagelinks a:link {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.pagelinks a:visited {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 700px) {
+	.pagelinks {
+		width: 80px;
+	}
+}
+
+.nav {
+	border-color: rgb(255, 255, 255);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	padding: 7px;
+}
+
+.am {
+	width: 130px;
+	height: 41px;
+}
+
+.pf {
+	width: 140px;
+	height: 41px;
+}
+
+.con {
+	width: 120px;
+	height: 41px;
+}
+
+@media only screen and (max-width: 700px) {
+	.nav {
+		display: none;
+	}
+}
+
+.nav:hover {
+	background-color: white;
+	color: black;
+}
+
+.nav:visited:hover {
+	color: black;
+}
+
+.menu {
+	display: none;
+	border-color: rgb(255, 255, 255);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	padding: 7px;
+	height: 41px;
+	width: 79px;
+}
+
+@media only screen and (max-width: 700px) {
+	.menu {
+		display: block;
+	}
+}
+
+.cv {
+	display: flex;
+	justify-content: center;
+	font-size: 1.3rem;
+	margin-top: 7px;
+	border-color: rgb(255, 255, 255);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	width: 60px;
+	height: 41px;
+	padding-top: 8px;
+}
+
+.cv {
+	text-decoration: none;
+	color: white;
+}
+
+.cv:hover {
+	background-color: white;
+}
+
+.cv:hover {
+	background-color: white;
+	color: black;
+}
+
+.background {
+	display: flex;
+	justify-content: center;
+	margin-top: 55px;
+	padding: 0px;
+	height: 750px;
+	background-image: url("textures-1198841.jpg");
+	background-size: cover;
+}
+
+.welcome {
+	background-color: rgb(255, 255, 255);
+	width: 500px;
+	height: 200px;
+	margin-top: 150px;
+	padding-left: 10px;
+	border-color: rgb(000, 000, 000);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	outline-color: rgb(255, 255, 255);
+	outline-width: 2px;
+	outline-style: solid;
+}
+
+.welcome h1 {
+	font-size: 2rem;
+	font-weight: normal;
+}
+
+.welcome p {
+	font-size: 1.2rem;
+}
+
+.about {
+	
+}
