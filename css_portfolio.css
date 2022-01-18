@@ -50,7 +50,7 @@ body {
 
 @media only screen and (max-width: 700px) {
 	.pagelinks {
-		display: none;
+		width: 80px;
 	}
 }
 
@@ -62,8 +62,19 @@ body {
 	padding: 7px;
 }
 
+@media only screen and (max-width: 700px) {
+	.nav {
+		display: none;
+	}
+}
+
 .menu {
 	visibility: hidden;
+	border-color: rgb(255, 255, 255);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	padding: 7px;
 }
 
 @media only screen and (max-width: 700px) {
