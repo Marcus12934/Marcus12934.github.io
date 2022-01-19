@@ -149,12 +149,13 @@ body {
 .welcome {
 	display: inline-block;
 	background-color: rgb(255, 255, 255);
+	text-align: center;
 	width: max-content;
 	max-width: 500px;
 	height: max-content;
 	min-height: 170px;
-	margin-top: 150px;
-	padding-left: 10px;
+	margin: 150px;
+	padding: 0px 10px;
 	border-width: 2px;
 	border-style: solid;
 	border-radius: 25px;
@@ -244,3 +245,168 @@ body {
 	}
 }
 
+.portfolio {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	grid-template-rows: 1fr 2fr 2fr;
+	row-gap: 20px;
+	justify-items: center;
+	grid-template-areas: 
+		"h h"
+		"a b"
+		"c d";
+	height: max-content;
+	background-color: rgb(102, 110, 122);
+	padding: 50px;
+}
+
+@media only screen and (max-width: 1100px) {
+	.portfolio {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 2fr 2fr 2fr 2r;
+		grid-template-areas: 
+			"h"
+			"a"
+			"b"
+			"c"
+			"d";
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	.projectimg {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	.projecttxt {
+		display: block;
+		text-align: center;
+	}
+}
+
+.Portfolioh {
+	background-color: red;
+	grid-area: h;
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	width: max-content;
+	max-width: 500px;
+	height: max-content;
+	min-height: 170px;
+	padding: 0px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	outline-color: rgb(255, 255, 255);
+	outline-width: 2px;
+	outline-style: solid;
+}
+
+.Portfolioh h2 {
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+.Portfolioh p {
+	font-size: 1.2rem;
+}
+
+.projecta {
+	grid-area: a;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: rgb(255, 255, 255);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 15px;
+	outline-color: rgb(255, 255, 255);
+	outline-width: 2px;
+	outline-style: solid;
+	margin-right: 50px;
+}
+
+.projectb {
+	grid-area: b;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: rgb(255, 255, 255);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 15px;
+	outline-color: rgb(255, 255, 255);
+	outline-width: 2px;
+	outline-style: solid;
+	margin-right: 50px;
+}
+
+.projectc {
+	grid-area: c;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: rgb(255, 255, 255);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 15px;
+	outline-color: rgb(255, 255, 255);
+	outline-width: 2px;
+	outline-style: solid;
+	margin-right: 50px;
+}
+
+.projectd {
+	grid-area: d;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: rgb(255, 255, 255);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 15px;
+	outline-color: rgb(255, 255, 255);
+	outline-width: 2px;
+	outline-style: solid;
+	margin-right: 50px;
+}
+
+.projecttxt {
+	padding: 0px 20px;
+}
+
+.projecttxt h3 {
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+.projecttxt p {
+	font-weight: normal;
+	font-size: 1.2rem;
+}
+
+.projectimg {
+	background-image: url("northern-lights-gc4eb335d8_640.jpg");
+	width: 100%;
+	height: 100%;
+	padding: 10%;
+	background-size: cover;
+	background-position: center;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 10px;
+}
+
+/*.portfolio {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	grid-template-rows: 1fr 2fr 2fr;
+	row-gap: 20px;
+	grid-template-areas:
+		"h ."
+		"a b"
+		"c d";
+	height: 1000px;
+	background-color: rgb(102, 110, 122);
+	padding: 50px;
+}
+*/
