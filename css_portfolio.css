@@ -391,22 +391,13 @@ a.nav:hover {
 	height: max-content;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 2fr 2fr;
 	grid-template-areas: 
 		"name name"
 		"txt txt "
 		"link .";
 	justify-items: center;
-	column-gap: 20px;
-}
-
-@media only screen and (max-width: 780px) {
-	.contact {
-		grid-template-columns: 1fr;
-		column-gap: 0px;
-		justify-items: center;
-	}
 }
 
 .contactTxt {
@@ -459,7 +450,6 @@ a.nav:hover {
 	background-color: rgb(000, 000, 000);
 	color: white;
 	outline-color: rgb(000, 000, 000);
-	border-color: rgb(000, 000, 000);
 }
 
 .name {
