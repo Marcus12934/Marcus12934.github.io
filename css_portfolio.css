@@ -438,7 +438,7 @@ body {
 	grid-template-columns: 1fr 1fr;
 }
 
-.l {
+.link {
 	background-color: rgb(255, 255, 255);
 	border-width: 2px;
 	border-style: solid;
@@ -455,7 +455,7 @@ body {
 	font-size: 1.2rem;
 }
 
-.l:hover {
+.link:hover {
 	background-color: rgb(000, 000, 000);
 	color: white;
 	outline-color: rgb(000, 000, 000);
@@ -484,7 +484,7 @@ body {
 	color: white;
 }
 
-#marcus {
+.marcus {
 	font-weight: normal;
 	color: white;
 	background-color: black;
@@ -492,7 +492,7 @@ body {
 	border-top-left-radius: 5px;
 }
 
-.name:hover #marcus {
+.name:hover .marcus {
 	background-color: white;
 	color: black;
 }
