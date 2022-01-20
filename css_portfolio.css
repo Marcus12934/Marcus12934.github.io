@@ -390,5 +390,60 @@ body {
 }
 
 .contact {
-	
+	background-color: rgb(135, 147, 168);
+	padding: 50px;
+	height: max-content;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+		"txt . "
+		"link link";
+	justify-items: center;
 }
+
+.contactTxt {
+	grid-area: txt;
+	width: 100px;
+	background-color: red;
+}
+
+.contactLinks {
+	grid-area: link;
+	width: 100px;
+	background-color: red;
+}
+
+/*.name {
+	display: flex;
+	justify-content: center;
+	font-weight: normal;
+	background-color: white;
+	width:211px;
+	height: 37px;
+	font-size: 2rem;
+	font-family: Courier New;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.name:hover {
+	background-color: black;
+	color: white;
+}
+
+#marcus {
+	font-weight: normal;
+	color: white;
+	background-color: black;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.name:hover #marcus {
+	background-color: white;
+	color: black;
+}*/
+
