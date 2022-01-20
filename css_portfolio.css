@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-size: 62.5%;
 	margin: 0px;
@@ -67,6 +71,13 @@ body {
 	height: 41px;
 }
 
+.anchor {
+	display: block;
+	position: relative;
+	top: -55px;
+	visibility: hidden;
+}
+
 .pf {
 	width: 140px;
 	height: 41px;
@@ -76,6 +87,12 @@ body {
 	width: 120px;
 	height: 41px;
 }
+
+/*.aboutlink {
+	display: block;
+	position: relative;
+	height: 55px;
+}*/
 
 @media only screen and (max-width: 700px) {
 	.nav {
