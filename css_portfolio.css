@@ -141,10 +141,6 @@ body {
 
 .cv:hover {
 	background-color: white;
-}
-
-.cv:hover {
-	background-color: white;
 	color: black;
 }
 
@@ -391,31 +387,83 @@ body {
 
 .contact {
 	background-color: rgb(135, 147, 168);
-	padding: 50px;
+	padding-top: 50px;
 	height: max-content;
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr 2fr 2fr;
 	grid-template-areas: 
-		"txt . "
-		"link link";
+		"name name"
+		"txt txt "
+		"link .";
 	justify-items: center;
+	column-gap: 20px;
+}
+
+@media only screen and (max-width: 780px) {
+	.contact {
+		grid-template-columns: 1fr;
+		column-gap: 0px;
+		justify-items: center;
+	}
 }
 
 .contactTxt {
 	grid-area: txt;
-	width: 100px;
-	background-color: red;
+	background-color: rgb(255, 255, 255);
+	padding: 0px 25px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	outline-color: rgb(255, 255, 255);
+	outline-width: 2px;
+	outline-style: solid;
+	margin-bottom: 15px;
+}
+
+.contactTxt h2 {
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+.contactTxt p {
+	font-size: 1.2rem;
 }
 
 .contactLinks {
 	grid-area: link;
-	width: 100px;
-	background-color: red;
+	width: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
-/*.name {
+.l {
+	background-color: rgb(255, 255, 255);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	outline-color: rgb(255, 255, 255);
+	outline-width: 2px;
+	outline-style: solid;
+	margin: 15px;
+	width: max-content;
+	height: max-content;
+	padding: 8px;
+	text-decoration: none;
+	color: black;
+	font-size: 1.2rem;
+}
+
+.l:hover {
+	background-color: rgb(000, 000, 000);
+	color: white;
+	outline-color: rgb(000, 000, 000);
+	border-color: rgb(000, 000, 000);
+}
+
+.name {
+	grid-area: name;
 	display: flex;
 	justify-content: center;
 	font-weight: normal;
@@ -427,6 +475,8 @@ body {
 	border-radius: 5px;
 	margin-top: 10px;
 	margin-bottom: 25px;
+	text-decoration: none;
+	color: black;
 }
 
 .name:hover {
@@ -445,5 +495,39 @@ body {
 .name:hover #marcus {
 	background-color: white;
 	color: black;
-}*/
+}
 
+footer {
+	color: white;
+	background-color: rgb(000, 000, 000);
+	margin: 0px;
+	padding: 0px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.c {
+	justify-self: center;
+	font-size: 2rem;
+	margin-top: 25px;
+	background-color: white;
+	border-radius: 50%;
+	color: black;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	padding-top: 3px;
+	border-width: 4px;
+	border-style: solid;
+	outline-color: rgb(255, 255, 255);
+	outline-width: 2px;
+	outline-style: solid;
+}
+
+footer h6 {
+	font-weight: normal;
+	font-size: 1rem;
+	margin-bottom: 25px;
+	justify-content: center;
+	justify-self: center;
+}
