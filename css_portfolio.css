@@ -8,11 +8,11 @@ html {
 
 body {
 	font-size: 62.5%;
-	margin: 0px;
+	margin: 0;
 	font-family: helvetica;
 }
 
-.navbar {
+nav {
 	display: flex;
 	justify-content: space-between;
 	height: 55px;
@@ -25,7 +25,7 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
-	.navbar {
+	nav {
 		padding-left: 5px;
 		padding-right: 5px;
 	}
@@ -154,7 +154,6 @@ a.nav:hover {
 }
 
 .welcome {
-	display: inline-block;
 	background-color: rgb(255, 255, 255);
 	text-align: center;
 	width: max-content;
@@ -185,7 +184,6 @@ a.nav:hover {
 	justify-content: space-between;
 	background-color: rgb(102, 130, 176);
 	width: 100%;
-	height: max-content;
 	padding: 50px;
 }
 
@@ -448,7 +446,7 @@ a.nav:hover {
 
 .link:hover {
 	background-color: rgb(000, 000, 000);
-	color: white;
+	color: rgb(255, 255, 255);
 	outline-color: rgb(000, 000, 000);
 }
 
@@ -500,5 +498,5 @@ footer h6 {
 	font-weight: normal;
 	font-size: 1rem;
 	justify-self: center;
-	margin: 0px;
+	margin: 0;
 }
