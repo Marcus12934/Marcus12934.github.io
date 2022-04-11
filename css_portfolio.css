@@ -12,58 +12,6 @@ body {
   font-family: helvetica;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  height: 55px;
-  background-color: #1e1e1e;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-@media only screen and (max-width: 700px) {
-  nav {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-}
-.pageLinks {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 500px;
-  list-style-type: none;
-  font-size: 1.3rem;
-  padding: 0px;
-  margin-left: 25px;
-  margin-top: 7px;
-}
-
-.pageLinks a:link {
-  text-decoration: none;
-  color: white;
-}
-
-.pageLinks a:visited {
-  text-decoration: none;
-  color: white;
-}
-
-@media only screen and (max-width: 700px) {
-  .pageLinks {
-    width: 80px;
-  }
-}
-.nav {
-  border-color: white;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 25px;
-  padding: 7px;
-}
-
 .am {
   width: 130px;
   height: 41px;
@@ -84,60 +32,6 @@ nav {
 .con {
   width: 120px;
   height: 41px;
-}
-
-@media only screen and (max-width: 700px) {
-  .nav {
-    display: none;
-  }
-}
-a.nav:hover {
-  background-color: white;
-  color: black;
-}
-
-.nav:visited:hover {
-  color: black;
-}
-
-.menu {
-  display: none;
-  border-color: white;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 25px;
-  padding: 7px;
-  height: 41px;
-  width: 79px;
-}
-
-@media only screen and (max-width: 700px) {
-  .menu {
-    display: block;
-  }
-}
-.cv {
-  display: flex;
-  justify-content: center;
-  font-size: 1.3rem;
-  margin-top: 7px;
-  border-color: white;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 25px;
-  width: 60px;
-  height: 41px;
-  padding-top: 8px;
-}
-
-.cv {
-  text-decoration: none;
-  color: white;
-}
-
-.cv:hover {
-  background-color: white;
-  color: black;
 }
 
 .background {
@@ -235,16 +129,67 @@ a.nav:hover {
     text-align: center;
   }
 }
+.portfolio {
+  background-color: #757575;
+  padding: 30px;
+}
+.portfolio div {
+  background-color: white;
+  border: black solid 2px;
+  border-radius: 10px;
+  outline: white solid 2px;
+  margin: 40px 0 40px;
+  padding: 0 20px;
+}
+.portfolio h2 {
+  font-weight: normal;
+  font-size: 2rem;
+}
+.portfolio h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.portfolio p {
+  font-size: 1.2rem;
+}
+.portfolio .linkContainer {
+  display: flex;
+}
+.portfolio .portfolioLink {
+  background-color: white;
+  border: black solid 2px;
+  border-radius: 10px;
+  outline: white solid 2px;
+  width: fit-content;
+  padding: 5px;
+  margin: 0 15px 20px 0;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+.portfolio .portfolioLink:hover {
+  background-color: black;
+  border: white solid 2px;
+  border-radius: 10px;
+  outline: black solid 2px;
+  width: fit-content;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
+
 .contact {
   background-color: #8793a8;
-  padding-top: 50px;
+  padding-top: 30px;
   height: max-content;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 2fr;
-  grid-template-areas: "name name" "txt txt " "link .";
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactLinks {
+  padding-top: 20px;
+  margin: 5px auto 30px;
 }
 
 .contactTxt {
@@ -257,7 +202,9 @@ a.nav:hover {
   outline-color: white;
   outline-width: 2px;
   outline-style: solid;
-  margin-bottom: 15px;
+  margin: 15px auto;
+  width: 40%;
+  text-align: center;
 }
 
 .contactTxt h2 {
@@ -267,13 +214,6 @@ a.nav:hover {
 
 .contactTxt p {
   font-size: 1.2rem;
-}
-
-.contactLinks {
-  grid-area: link;
-  width: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .link {
