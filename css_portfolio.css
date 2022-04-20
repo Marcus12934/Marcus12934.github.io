@@ -38,7 +38,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 750px;
+  height: 100vh;
   background-image: url("textures-1198841.jpg");
   background-size: cover;
 }
